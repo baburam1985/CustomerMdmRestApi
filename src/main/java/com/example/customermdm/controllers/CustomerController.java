@@ -1,4 +1,4 @@
-package com.example.customermdm.controller;
+package com.example.customermdm.controllers;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,5 +12,9 @@ public class CustomerController {
         return "Greetings from Spring Boot!";
     }
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String getCustomer() {
+        return "Greetings from Spring Boot!";
+    }
 
 }
